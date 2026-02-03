@@ -4,7 +4,7 @@ Each file is commented with explanations and tips for editing certain variables 
 **events.php**\
 An array of user-defined events that will be displayed on the calendar. Comes with some pre-existing events; keep or discard them as desired. Events do not need to be listed in calendar order, as the script finds any matching key regardless of where it is in the list.\
 Events are formatted as follows:\
-"Key" => array("A description of the event", "class")\
+"Key" => array("A description of the event", "class")
 
 Keys should be written using the first three letters of the month name with first letter capitalized, then the numerical date (no trailing zeroes or whitespace).\
 ex. "Jan1", "Feb14", "Dec25"
