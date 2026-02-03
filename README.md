@@ -11,7 +11,7 @@ ex. "Jan1", "Feb14", "Dec25"
 
 Arrays should be two strings separated by a comma. The first string is the text description that will display on the calendar, and the second is the event's class, which can be styled at the end of style.css.\
 ex. ("Christmas Eve", "holiday") or ("John's birthday", "bday")\
-**Full example:** "Feb14" => array("Valentine's Day", "holiday")\
+**Full example:** "Feb14" => array("Valentine's Day", "holiday")
 
 Make sure each entry in the events.php array is followed by a comma except for the last entry, or the calendar will not display properly.
 
