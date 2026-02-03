@@ -19,7 +19,7 @@ Make sure each entry in the events.php array is followed by a comma except for t
 A CSS stylesheet for the calendar. Most visual elements are editable, but bear in mind changing some of the flex and size settings might cause issues with the calendar display.\
 At the end of the stylesheet, the user can define and style classes for certain types of events as taken from the array in events.php. By default, the only applied style is to add a relevant emoji using the ::before modifier.
 
-Comes with a few pre-defined classes: **🎂  bday, 📖 book, 🎉 holiday, 📺 tv**
+Comes with a few pre-defined classes: **🎂 bday, 📖 book, 🎉 holiday, 📺 tv**
 
 **calendarbuild.php**\
 PHP script that builds and populates the calendar, as styled with style.css, with events as listed in events.php. Includes several options for changing the calendar's behavior.
