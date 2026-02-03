@@ -28,7 +28,8 @@ PHP script that builds and populates the calendar, as styled with style.css, wit
 Changing this value changes the year that the calendar builds from. 
 
 *$weekday = 2;*\
-Changing this value determines if and how days of the week are displayed: As long names (Monday), shortened names (Mon), or not at all. 1 = long, 2 = shortened, 0 = not displayed.
+Changing this value determines if and how days of the week are displayed: As long names (Monday), shortened names (Mon), or not at all.\
+1 = long, 2 = shortened, 0 = not displayed.
 
 *for ($m_cur = 1; $m_cur <= 12; $m_cur++)*\
 This line can be adjusted to change the range of months displayed by the calendar.\
