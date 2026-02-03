@@ -14,22 +14,10 @@ Make sure each entry is followed by a comma except for the last entry or the cal
 */
 
 $events = [
-"Feb4" => array("Cannibal Movie Night", "tv"),
-"Mar19" => array("Steel Ball Run premiere", "tv"),
-"Jul1" => array("Elusive Samurai S2 this month", "tv"),
-"Feb8" => array("New Samurai chapter", "book"),
-"Dec10" => array("My birthday!", "bday"),
-"Mar27" => array("Grant's birthday", "bday"),
-"Apr2" => array("Livia's birthday", "bday"),
-"May20" => array("Zoie's and Skylar's birthday", "bday"),
-"Jun26" => array("Andy's birthday", "bday"),
-"Nov23" => array("Brayden's birthday", "bday"),
-"Dec2" => array("Ace's birthday", "bday"),
-"Oct22" => array("Mads' birthday", "bday"),
-"Jul14" => array("Ally's birthday", "bday"),
+"Jan30" => array("Iron Lung movie release", "tv"),
+"Feb14" => array("Valentine's Day", "holiday"),
 "Dec25" => array("Christmas", "holiday"),
-"Jul1" => array("Ellie's birthday", "bday"),
-"May19" => array("Gennie's birthday", "bday")
+"Jul1" => array("Minions 3: Mega Minions release", "tv")
 
 ];
 
