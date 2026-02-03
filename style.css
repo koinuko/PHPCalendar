@@ -1,0 +1,57 @@
+.month {
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+width:100%;
+justify-content:center;
+}
+
+.calbox {
+border:1px dashed black;
+background-color:white;
+color:black;
+max-width:13%;
+height:100px;
+flex: 1 0 14%;
+}
+
+.emptybox {
+max-width:13%;
+height:100px;
+flex: 1 0 14%;
+border: 1px solid transparent;
+}
+
+.corner {
+margin:0px;
+padding-left:5px;
+text-align:left;
+}
+
+.dayname {
+color: #AAA;
+font-size:14px;
+}
+
+.eventinfo {
+font-size:14px;
+}
+
+/* ********** Styles below are for displaying icons next to event entries using classes as defined in the array found in events.php. Make sure that this file is encoded in UTF-8 so that emojis and Unicode symbols will display properly
+*/
+
+.tv::before {
+content: "📺 ";
+}
+
+.book::before {
+content: "📖 ";
+}
+
+.bday::before {
+content: "🎂 ";
+}
+
+.holiday::before {
+content: "🎉 ";
+}
