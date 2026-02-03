@@ -16,7 +16,7 @@ color:black;
 height:100px;
 /* Changing the max-width/flex settings may result in the calendar displaying improperly. */
 max-width:13%;
-flex: 1 0 14%;
+flex:1 0 14%;
 }
 
 /* If you have changed the SIZE of the border in .calbox or removed it, make sure to change the border size in the .emptybox class as well to keep the calendar aligned. 
@@ -24,8 +24,8 @@ Changing the max-width/flex settings may result in the calendar displaying impro
 .emptybox {
 height:100px;  
 max-width:13%;
-flex: 1 0 14%;
-border: 1px solid transparent;
+flex:1 0 14%;
+border:1px solid transparent;
 }
 
 /* The numerical date in the corner of each box. This class, when rendered, includes the .dayname and .eventinfo as <span> tags than can be further styled.*/
@@ -37,7 +37,7 @@ text-align:left;
 
 /* Day of the week as displayed on the calendar. */
 .dayname {
-color: #AAA;
+color:#AAA;
 font-size:14px;
 }
 
@@ -49,17 +49,17 @@ font-size:14px;
 /* ********** Styles below are for displaying icons next to event entries using classes as defined in the array found in events.php. Make sure that this file is encoded in UTF-8 so that emojis and Unicode symbols will display properly. */
 
 .tv::before {
-content: "📺 ";
+content:"📺 ";
 }
 
 .book::before {
-content: "📖 ";
+content:"📖 ";
 }
 
 .bday::before {
-content: "🎂 ";
+content:"🎂 ";
 }
 
 .holiday::before {
-content: "🎉 ";
+content:"🎉 ";
 }
