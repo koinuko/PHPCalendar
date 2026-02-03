@@ -24,7 +24,7 @@ ex. for ($m_cur = 2; $m_cur <= 12; $m_cur++)
 This example is set to begin at February (2) and end at December (12).
 */
 
-for ($m_cur = 2; $m_cur <= 12; $m_cur++) {
+for ($m_cur = 1; $m_cur <= 12; $m_cur++) {
 		
 	/* Defines variables for current month (name, # of days). Calculates how many empty boxes are needed
 	to keep the month aligned in rows of 7 boxes. */
