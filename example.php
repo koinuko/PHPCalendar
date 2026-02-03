@@ -1,8 +1,9 @@
+<!DOCTYPE html>
+<html>
 <head>
   <title>My Calendar</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<html>
 <body>
 
   <?php
@@ -10,7 +11,5 @@
     include "calendarbuild.php";
   ?>
   
-</body>
-
-  
+</body> 
 </html>
