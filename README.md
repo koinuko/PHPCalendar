@@ -11,10 +11,10 @@ At the end of the stylesheet, the user can define and style classes for certain 
 **calendarbuild.php**
 PHP script that builds and populates the calendar, as styled with style.css, with events as listed in events.php. Includes several options for changing the calendar's behavior.
 
-$y = 2026
+$y = 2026\
 Changing this value changes the year that the calendar builds from. 
 
-$weekday = 2;
+$weekday = 2;\
 Changing this value determines if and how days of the week are displayed: As long names (Monday), shortened names (Mon), or not at all. 1 = long, 2 = shortened, 0 = not displayed.
 
 **index.php**
