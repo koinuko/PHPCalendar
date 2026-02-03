@@ -24,7 +24,7 @@ Comes with a few pre-defined classes: **🎂 bday, 📖 book, 🎉 holiday, 📺
 **calendarbuild.php**\
 PHP script that builds and populates the calendar, as styled with style.css, with events as listed in events.php. Includes several options for changing the calendar's behavior.
 
-*$y = 2026;*
+*$y = 2026;*\
 Changing this value changes the year that the calendar builds from. 
 
 *$weekday = 2;*\
