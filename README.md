@@ -1,14 +1,25 @@
 A PHP script to generate a calendar (calendarbuild.php), style it (style.css), and populate it with user-defined events (events.php). Includes an example (index.php) that should work right out of the box.
 Each file is commented with explanations and tips for editing certain variables or behaviors.
 
-**events.php**
-An array of user-defined events that will be displayed on the calendar. Comes with some pre-existing events; keep or discard them as desired.
+**events.php**\
+An array of user-defined events that will be displayed on the calendar. Comes with some pre-existing events; keep or discard them as desired. Events do not need to be listed in calendar order, as the script finds any matching key regardless of where it is in the list.\
+Events are formatted as follows:\
+"Key" => array("A description of the event", "class")\
 
-**style.css**
+Keys should be written using the first three letters of the month name with first letter capitalized, then the numerical date (no trailing zeroes or whitespace).\
+ex. "Jan1", "Feb14", "Dec25"
+
+Arrays should be two strings separated by a comma. The first string is the text description that will display on the calendar, and the second is the event's class, which can be styled at the end of style.css.\
+ex. ("Christmas Eve", "holiday") or ("John's birthday", "bday")\
+**Full example:** "Feb14" => array("Valentine's Day", "holiday")\
+
+Make sure each entry in the events.php array is followed by a comma except for the last entry, or the calendar will not display properly.
+
+**style.css**\
 A CSS stylesheet for the calendar. Most visual elements are editable, but bear in mind changing some of the flex and size settings might cause issues with the calendar display.
 At the end of the stylesheet, the user can define and style classes for certain types of events as taken from the array in events.php
 
-**calendarbuild.php**
+**calendarbuild.php**\
 PHP script that builds and populates the calendar, as styled with style.css, with events as listed in events.php. Includes several options for changing the calendar's behavior.
 
 *$y = 2026;*
@@ -25,5 +36,5 @@ By default, the calendar displays January to December of the given year (as defi
 
 A header for each calendar month can be edited by the user. The default is displayed in the format of January 2026.
 
-**index.php**
+**index.php**\
 An example of the calendar in action. Live preview can be found at https://kyaa.fun/phpcalendar/.
