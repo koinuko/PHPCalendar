@@ -20,8 +20,8 @@ Change the variables in the for() statement below to change behavior.
 ********** $m_cur = The first month you want to display, where January = 1, February = 2 ... December = 12.
 ********** $m_cur <= The last month you want to display, same number system as above.
 
-ex. for ($m_cur = 2; $m_cur <= 12; $m_cur++)
-This example is set to begin at February (2) and end at December (12).
+ex. for ($m_cur = 2; $m_cur <= 10; $m_cur++)
+This example is set to begin in February (2) and end in October (10). The actual script by default begins in January and ends in December.
 */
 
 for ($m_cur = 1; $m_cur <= 12; $m_cur++) {
@@ -31,7 +31,6 @@ for ($m_cur = 1; $m_cur <= 12; $m_cur++) {
 	$jd=gregoriantojd($m_cur,1,$y);
 	$m = jdmonthname($jd,1);
 	$mshort = jdmonthname($jd,0);
-	$id = $mshort.($i+1);
 	$d = cal_days_in_month(CAL_GREGORIAN,$m_cur,2026);
 	$blankdays = (35 - $d) % 7;	
 
@@ -40,16 +39,19 @@ for ($m_cur = 1; $m_cur <= 12; $m_cur++) {
 	*/
 	echo "<h3>$m $y</h3><br/>";
 
-	// Echoes a box for each day in the selected month with a specific id.  
+	/* Echoes a box for each day in the selected month with a date-specific id. 
+	********** If you don't want the day of the month to be displayed, you can remove or comment out the following line:
+	echo "<span class='dayname'> (".jddayofweek((gregoriantojd($m_cur,($i + 1),$y)),2).")</span>";
+	*/	
 	echo "<div class='month'>";
 	for ($i = 0; $i < $d; $i++) {
 		echo "<div class='calbox' id='";
 		echo $mshort.($i+1);
-		echo "'><p class='corner'>".($i+1)."<span class='dayname'> (";
-		echo jddayofweek((gregoriantojd($m_cur,($i + 1),$y)),2);
-		echo ")</span><br/>";
+		echo "'><p class='corner'>".($i+1);
+		echo "<span class='dayname'> (".jddayofweek((gregoriantojd($m_cur,($i + 1),$y)),2).")</span>";
+		echo "<br/>";
 
-		// Checks if an event for this date exists in file events.php
+		// Checks if an event for this date exists in file events.php and displays it
 		if (array_key_exists($mshort.($i+1), $events)) {
 			echo "<span class='eventinfo ";
 			echo $events[$mshort.($i+1)][1];
@@ -64,7 +66,7 @@ for ($m_cur = 1; $m_cur <= 12; $m_cur++) {
 	// If selected month is not equally divisible by 7, adds extra empty boxes to keep calendar aligned
 	if ($blankdays > 0) {
 		for ($i = 0; $i < $blankdays; $i++) {
-		echo "<div class='emptybox' id='".$mshort."empty".($i+1)."'></div>";
+		echo "<div class='emptybox' ='".$mshort."empty".($i+1)."'></div>";
 		}
 	}
 	echo "</div><br/>";
