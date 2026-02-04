@@ -2,7 +2,7 @@ A PHP script to generate a calendar (calendarbuild.php), style it (style.css), a
 Each file is commented with explanations and tips for editing certain variables or behaviors.
 
 **events.php**\
-An array of user-defined events that will be displayed on the calendar. Comes with some pre-existing events; keep or discard them as desired. Events do not need to be listed in calendar order, as the script finds any matching key regardless of where it is in the list.\
+An array of user-defined events that will be displayed on the calendar. An example list of events is included. Events do not need to be listed in calendar order, as the script finds any matching key regardless of where it is in the list.\
 Events are formatted as follows:\
 "Key" => array("A description of the event", "class")
 
