@@ -23,17 +23,23 @@ $events = [
 "Feb17" => array("Lunar New Year", "holiday"),
 "Feb18" => array("First day of Ramadan", "holiday"),  
 "Mar14" => array("Pi Day", "holiday"),
+"Sep3" => array("Return library books", "book"),
 "Nov5" => array("Book Club week 1", "book"),
 "Nov12" => array("Book Club week 2", "book"),
 "Nov19" => array("Book Club week 3", "book"),
 "Nov26" => array("Book Club week 4", "book"),
 "April7" => array("Essay due :(", "book"),
 "Jun12" => array("John Linnell's birthday", "bday"),
-"May3" => array("Cousin's birthday party", "bday"),
+"Apr1" => array("Usopp's birthday", "bday"),
+"May5" => array("Monkey D. Luffy's birthday", "bday"),
 "Dec24" => array("Tony Tony Chopper's birthday", "bday"),
 "Jun11" => array("Nothing today"),
 "Apr15" => array("Clean the house"),
-"Jul9" => array("Dentist appointment")
+"Jul9" => array("Dentist appointment"),
+"Jan4" => array("Museum trip"),
+"Jan11" => array("Bring a dish to the potluck"),
+"May12" => array("Lunch at sushi restaurant"),
+"Aug8" => array("Garage sale")
 ];
 
 ?>
