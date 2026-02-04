@@ -28,7 +28,8 @@ $events = [
 "Nov26" => array("Book Club week 4", "book"),
 "April7" => array("Essay due :(", "book"),
 "Jun12" => array("John Linnell's birthday", "bday"),
-"May3" => array("Cousin's birthday party", "bday")
+"May3" => array("Cousin's birthday party", "bday"),
+"Jun11" => array("Nothing today", "")
 ];
 
 ?>
