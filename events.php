@@ -8,6 +8,7 @@ ex. "Jan1", "Feb14", "Dec25"
 
 Arrays should be two strings separated by a comma. First string is the text description that will display on the calendar, and the second is the event's class, which can be styled at the end of style.css.
 ex. ("Christmas Eve", "holiday") or ("John's birthday", "bday")
+If not assigning a class, the second string can be left blank ("") or omitted entirely.
 
 Make sure each entry is followed by a comma except for the last entry or the calendar will not display properly.
 
@@ -29,7 +30,7 @@ $events = [
 "April7" => array("Essay due :(", "book"),
 "Jun12" => array("John Linnell's birthday", "bday"),
 "May3" => array("Cousin's birthday party", "bday"),
-"Jun11" => array("Nothing today", "")
+"Jun11" => array("Nothing today")
 ];
 
 ?>
