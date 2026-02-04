@@ -40,4 +40,6 @@ By default, the calendar displays January to December of the given year (as defi
 A header for each calendar month can be edited by the user. The default is displayed in the format of January 2026.
 
 **index.php**\
-An example of the calendar in action. Live preview can be found at https://kyaa.fun/phpcalendar/.
+An example of the calendar in action. Live preview can be found at https://kyaa.fun/phpcalendar/.\
+
+My personal calendar can be found at https://koinuko.pink/about/calendar/.
