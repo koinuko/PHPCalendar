@@ -1,12 +1,10 @@
 <?php
 
 /*
-
 Written by Koinuko @ https://koinuko.pink
 A PHP script that generates a calendar display, reads events from an array in another PHP file (events.php), and displays them on the calendar. Includes an example (index.php) Also includes a stylesheet (style.css) that can optionally display icons next to events based on their class.
 
 The areas marked with ********** allow you to change certain variables to adjust how the calendar works.
-
 */
  
 // ********** Change the value of $y below if you want the calendar to calculate and display dates from a different year. Default value is 2026.
@@ -36,7 +34,7 @@ for ($m_cur = 1; $m_cur <= 12; $m_cur++) {
 	$d = cal_days_in_month(CAL_GREGORIAN,$m_cur,2026);
 	$blankdays = (35 - $d) % 7;	
 
-	/* ********** Echoes a header for each month. Edit as desired. 
+	/* ********** Echoes a header for each month. Edit content as desired. 
 	Optional variables to use: 
 	$m = month name (ex. January)
 	$mshort = shortened month name (ex. Jan)
