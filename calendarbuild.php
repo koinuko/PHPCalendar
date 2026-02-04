@@ -43,10 +43,12 @@ for ($m_cur = 1; $m_cur <= 12; $m_cur++) {
 	$y = year
 	Default is displayed as January 2026.
 	ex. 
-	echo "<h3>$m $y</h3><br/>"; - January 2026
-	echo "<h3>$mshort. $y</h3><br/>"; - Jan. 2026
+	echo "$m $y"; - January 2026
+	echo "$mshort. $y"; - Jan. 2026
 	*/
-	echo "<h3>$m $y</h3><br/>";
+	echo "<div class='calheader'>";
+	echo $m $y;
+	echo "</div><br/>";
 
 	// Echoes a box for each day in the selected month with a date-specific id.	
 	echo "<div class='month'>";
