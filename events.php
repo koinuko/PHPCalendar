@@ -30,7 +30,10 @@ $events = [
 "April7" => array("Essay due :(", "book"),
 "Jun12" => array("John Linnell's birthday", "bday"),
 "May3" => array("Cousin's birthday party", "bday"),
-"Jun11" => array("Nothing today")
+"Dec24" => array("Tony Tony Chopper's birthday", "bday"),
+"Jun11" => array("Nothing today"),
+"Apr15" => array("Clean the house"),
+"Jul9" => array("Dentist appointment")
 ];
 
 ?>
