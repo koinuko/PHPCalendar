@@ -28,6 +28,12 @@ flex:1 0 14%;
 border:1px solid transparent;
 }
 
+/* Header that displays at the top of each month. */
+.calheader {
+font-size:18px;
+padding:10px;
+}
+
 /* The numerical date in the corner of each box. This class, when rendered, includes the .dayname and .eventinfo as <span> tags than can be further styled.*/
 .corner {
 margin:0px;
