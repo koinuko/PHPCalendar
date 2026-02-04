@@ -15,8 +15,9 @@ Make sure each entry is followed by a comma except for the last entry or the cal
 
 $events = [
 "Jan30" => array("Iron Lung movie release", "tv"),
-"Marc10" => array("One Piece Live Action Season 2", "tv"),
+"Mar10" => array("One Piece Live Action Season 2", "tv"),
 "Jul1" => array("Minions 3: Mega Minions release", "tv"),
+"Oct30" => array("Horror movie marathon!", "tv"),
 "Feb14" => array("Valentine's Day", "holiday"),
 "Feb17" => array("Lunar New Year", "holiday"),
 "Feb18" => array("First day of Ramadan", "holiday"),  
@@ -25,7 +26,9 @@ $events = [
 "Nov12" => array("Book Club week 2", "book"),
 "Nov19" => array("Book Club week 3", "book"),
 "Nov26" => array("Book Club week 4", "book"),
-"Jun12" => array("John Linnell's birthday", "bday")  
+"April7" => array("Essay due :(", "book"),
+"Jun12" => array("John Linnell's birthday", "bday"),
+"May3" => array("Cousin's birthday party", "bday")
 ];
 
 ?>
